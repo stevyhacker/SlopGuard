@@ -109,6 +109,12 @@ const ms = Date.now() - t0;
 await page.screenshot({ path: join(outDir, "after.png") });
 if (SHOT) {
   // README screenshot: reveal one folded reply so both states show, crop to the column with the pill in view.
+  mkdirSync(join(root, "store", "raw"), { recursive: true });
+  await page.setViewportSize({ width: 700, height: 1180 });
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.waitForTimeout(300);
+  const col = await page.$eval("main", (m) => { const r = m.getBoundingClientRect(); return { x: r.x, width: r.width }; });
+  await page.screenshot({ path: join(root, "store", "raw", "folded.png"), clip: { x: col.x, y: 48, width: col.width, height: 1100 } });
   const firstHidden = await page.$eval("article.sg-hidden", (a) => a.dataset.sgId).catch(() => null);
   if (firstHidden) { await page.click(`.sg-bar[data-id="${firstHidden}"]`); await page.waitForTimeout(400); }
   await page.setViewportSize({ width: 700, height: 1180 });
@@ -116,7 +122,8 @@ if (SHOT) {
   await page.waitForTimeout(300);
   const box = await page.$eval("main", (m) => { const r = m.getBoundingClientRect(); return { x: r.x, width: r.width }; });
   await page.screenshot({ path: join(root, "docs", "screenshot.png"), clip: { x: box.x - 40, y: 0, width: box.width + 80, height: 1180 } });
-  console.log("wrote docs/screenshot.png");
+  await page.screenshot({ path: join(root, "store", "raw", "revealed.png"), clip: { x: col.x, y: 48, width: col.width, height: 1100 } });
+  console.log("wrote docs/screenshot.png and store/raw/*.png");
 }
 
 const hiddenIds = await page.$$eval("article.sg-hidden", (as) => as.map((a) => a.dataset.sgId));
@@ -141,6 +148,16 @@ if (hiddenIds.length) {
   const remaining = await page.$$eval("article.sg-hidden", (as) => as.length);
   console.log(`click to show: ${visible ? "ok" : "FAIL"}, hide again: ${refolded ? "ok" : "FAIL"}, show all: ${remaining === 0 ? "ok" : "FAIL"}`);
   ok = ok && visible && refolded && remaining === 0;
+}
+if (SHOT) {
+  // Settings page for the store listing, with a placeholder key so no real key shows up in an image.
+  await sw.evaluate(() => chrome.storage.local.set({ settings: { keys: { openrouter: "sk-or-v1-0000000000000000000000000000000000000000" } } }));
+  const opts = await ctx.newPage();
+  await opts.setViewportSize({ width: 760, height: 1000 });
+  await opts.emulateMedia({ colorScheme: "dark" });
+  await opts.goto(sw.url().replace(/src\/background\.js$/, "src/options.html"));
+  await opts.waitForTimeout(500);
+  await opts.screenshot({ path: join(root, "store", "raw", "options.png"), fullPage: true });
 }
 await ctx.close();
 console.log(ok ? "PASS" : "FAIL");

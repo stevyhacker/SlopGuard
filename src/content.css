@@ -1,0 +1,50 @@
+/* SlopGuard on x.com. Colors use X's own neutral grays so it fits light, dim and dark themes. */
+.sg-hidden { display: none !important; }
+.sg-anim { overflow: hidden !important; transition: max-height 240ms cubic-bezier(.2, .8, .2, 1), opacity 180ms ease-out !important; }
+
+.sg-bar {
+  display: flex; align-items: center; gap: 10px;
+  padding: 0 16px; min-height: 40px;
+  font: 13px/1.3 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: rgb(113, 118, 123);
+  border-bottom: 1px solid rgba(128, 128, 128, .22);
+  animation: sg-in 220ms ease-out;
+  user-select: none;
+}
+.sg-folded { cursor: pointer; }
+.sg-folded:hover { background: rgba(128, 128, 128, .07); }
+.sg-revealed { min-height: 30px; border-bottom: 0; font-size: 12px; }
+.sg-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sg-chip { padding: 1px 8px; border-radius: 999px; background: rgba(128, 128, 128, .16); font-size: 12px; white-space: nowrap; }
+.sg-btn {
+  margin-left: auto; padding: 3px 12px; border-radius: 999px; border: 1px solid rgba(128, 128, 128, .4);
+  background: transparent; color: rgb(29, 155, 240); font: inherit; font-weight: 600; cursor: pointer; white-space: nowrap;
+}
+.sg-btn + .sg-btn { margin-left: 0; }
+.sg-btn:hover { background: rgba(29, 155, 240, .1); }
+.sg-revealed .sg-btn { padding: 1px 10px; font-weight: 500; }
+.sg-shield {
+  flex: none; width: 14px; height: 14px; background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3Zm-1.2 14.2-3.5-3.5 1.4-1.4 2.1 2.1 4.6-4.6 1.4 1.4-6 6Z'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3Zm-1.2 14.2-3.5-3.5 1.4-1.4 2.1 2.1 4.6-4.6 1.4 1.4-6 6Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.sg-pill {
+  position: fixed; left: 20px; bottom: 20px; z-index: 9999;
+  display: flex; align-items: center; gap: 10px; padding: 8px 14px; border-radius: 999px;
+  background: rgb(15, 20, 25); color: #e7e9ea; border: 1px solid rgb(47, 51, 54);
+  font: 13px/1.3 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .3);
+  opacity: 0; transform: translateY(8px); pointer-events: none;
+  transition: opacity 180ms ease-out, transform 180ms ease-out;
+}
+.sg-pill-on { opacity: 1; transform: none; pointer-events: auto; }
+.sg-pill b { font-weight: 700; }
+.sg-pill a { color: rgb(29, 155, 240); cursor: pointer; font-weight: 600; }
+.sg-pill a:hover { text-decoration: underline; }
+
+@keyframes sg-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .sg-anim, .sg-pill { transition: none !important; }
+  .sg-bar { animation: none; }
+}

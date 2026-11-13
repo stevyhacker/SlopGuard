@@ -1,0 +1,794 @@
+{
+  "jev-1.14": {
+    "name": "jev-1.14",
+    "provider": {
+      "kind": "decision",
+      "model": "typesafe/jev-1.14"
+    },
+    "servedModel": "typesafe/jev-1.14-20261014",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.9099,
+    "heldoutAuc": 0.8946572580645161,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 0,
+      "fp": 0,
+      "fn": 16,
+      "tn": 62,
+      "accuracy": 0.7948717948717948,
+      "precision": null,
+      "recall": 0,
+      "f1": 0
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 30,
+      "fp": 15,
+      "fn": 10,
+      "tn": 110,
+      "accuracy": 0.8484848484848485,
+      "precision": 0.6666666666666666,
+      "recall": 0.75,
+      "f1": 0.7058823529411765
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 0,
+      "fp": 0,
+      "fn": 40,
+      "tn": 125,
+      "accuracy": 0.7575757575757576,
+      "precision": null,
+      "recall": 0,
+      "f1": 0
+    },
+    "brier": 0.12036000000000001,
+    "latencyMs": {
+      "mean": 235.4205849999999,
+      "p50": 224.12129199999993,
+      "p90": 291.601291
+    },
+    "costUsd": 0.002883048,
+    "costPer1kReplies": 0.017473018181818182,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:31:38.023Z"
+  },
+  "jev-1.13": {
+    "name": "jev-1.13",
+    "provider": {
+      "kind": "decision",
+      "model": "typesafe/jev-1.13"
+    },
+    "servedModel": "typesafe/jev-1.13-20260917",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.9101,
+    "heldoutAuc": 0.8911290322580645,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 0,
+      "fp": 0,
+      "fn": 16,
+      "tn": 62,
+      "accuracy": 0.7948717948717948,
+      "precision": null,
+      "recall": 0,
+      "f1": 0
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 29,
+      "fp": 8,
+      "fn": 11,
+      "tn": 117,
+      "accuracy": 0.8848484848484849,
+      "precision": 0.7837837837837838,
+      "recall": 0.725,
+      "f1": 0.7532467532467533
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 0,
+      "fp": 0,
+      "fn": 40,
+      "tn": 125,
+      "accuracy": 0.7575757575757576,
+      "precision": null,
+      "recall": 0,
+      "f1": 0
+    },
+    "brier": 0.11125636363636365,
+    "latencyMs": {
+      "mean": 219.1819920769232,
+      "p50": 212.30612500000007,
+      "p90": 261.768959
+    },
+    "costUsd": 0.002883048,
+    "costPer1kReplies": 0.017473018181818182,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:27:39.078Z"
+  },
+  "gemini-decision-1": {
+    "name": "gemini-decision-1",
+    "provider": {
+      "kind": "decision",
+      "model": "google/gemini-decision-1"
+    },
+    "servedModel": "google/gemini-decision-1-20261111",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.8628,
+    "heldoutAuc": 0.8387096774193549,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 0,
+      "fp": 0,
+      "fn": 16,
+      "tn": 62,
+      "accuracy": 0.7948717948717948,
+      "precision": null,
+      "recall": 0,
+      "f1": 0
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 19,
+      "fp": 6,
+      "fn": 21,
+      "tn": 119,
+      "accuracy": 0.8363636363636363,
+      "precision": 0.76,
+      "recall": 0.475,
+      "f1": 0.5846153846153846
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 4,
+      "fp": 0,
+      "fn": 36,
+      "tn": 125,
+      "accuracy": 0.7818181818181819,
+      "precision": 1,
+      "recall": 0.1,
+      "f1": 0.18181818181818182
+    },
+    "brier": 0.11658806564657567,
+    "latencyMs": {
+      "mean": 682.5301986538459,
+      "p50": 428.6234169999998,
+      "p90": 2034.0750000000003
+    },
+    "costUsd": 0.007201800000000001,
+    "costPer1kReplies": 0.043647272727272736,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:27:43.693Z"
+  },
+  "gpt-6-luna-decisions": {
+    "name": "gpt-6-luna-decisions",
+    "provider": {
+      "kind": "decision",
+      "model": "openai/gpt-6-luna-decisions"
+    },
+    "servedModel": "openai/gpt-6-luna-decisions-20261006",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.9601,
+    "heldoutAuc": 0.9511088709677419,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 0,
+      "fp": 0,
+      "fn": 16,
+      "tn": 62,
+      "accuracy": 0.7948717948717948,
+      "precision": null,
+      "recall": 0,
+      "f1": 0
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 32,
+      "fp": 5,
+      "fn": 8,
+      "tn": 120,
+      "accuracy": 0.9212121212121213,
+      "precision": 0.8648648648648649,
+      "recall": 0.8,
+      "f1": 0.8311688311688312
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 2,
+      "fp": 0,
+      "fn": 38,
+      "tn": 125,
+      "accuracy": 0.7696969696969697,
+      "precision": 1,
+      "recall": 0.05,
+      "f1": 0.09523809523809523
+    },
+    "brier": 0.08005575757575757,
+    "latencyMs": {
+      "mean": 405.66088938461536,
+      "p50": 342.8000840000004,
+      "p90": 772.9148750000004
+    },
+    "costUsd": 0.009843600000000003,
+    "costPer1kReplies": 0.05965818181818183,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:27:46.442Z"
+  },
+  "clef": {
+    "name": "clef",
+    "provider": {
+      "kind": "decision",
+      "model": "cloudflare/clef"
+    },
+    "servedModel": "cloudflare/clef",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.9296,
+    "heldoutAuc": 0.8951612903225806,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 0,
+      "fp": 0,
+      "fn": 16,
+      "tn": 62,
+      "accuracy": 0.7948717948717948,
+      "precision": null,
+      "recall": 0,
+      "f1": 0
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 24,
+      "fp": 6,
+      "fn": 16,
+      "tn": 119,
+      "accuracy": 0.8666666666666667,
+      "precision": 0.8,
+      "recall": 0.6,
+      "f1": 0.6857142857142857
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 1,
+      "fp": 0,
+      "fn": 39,
+      "tn": 125,
+      "accuracy": 0.7636363636363637,
+      "precision": 1,
+      "recall": 0.025,
+      "f1": 0.04878048780487806
+    },
+    "brier": 0.0973872278181818,
+    "latencyMs": {
+      "mean": 514.9133526538463,
+      "p50": 509.10241700000006,
+      "p90": 646.7134580000002
+    },
+    "costUsd": 0.016305935999999997,
+    "costPer1kReplies": 0.09882385454545453,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:27:49.970Z"
+  },
+  "clef-flash": {
+    "name": "clef-flash",
+    "provider": {
+      "kind": "decision",
+      "model": "cloudflare/clef-flash"
+    },
+    "servedModel": "cloudflare/clef-flash",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.8405,
+    "heldoutAuc": 0.8588709677419355,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 0,
+      "fp": 0,
+      "fn": 16,
+      "tn": 62,
+      "accuracy": 0.7948717948717948,
+      "precision": null,
+      "recall": 0,
+      "f1": 0
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 13,
+      "fp": 5,
+      "fn": 27,
+      "tn": 120,
+      "accuracy": 0.806060606060606,
+      "precision": 0.7222222222222222,
+      "recall": 0.325,
+      "f1": 0.44827586206896547
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 0,
+      "fp": 0,
+      "fn": 40,
+      "tn": 125,
+      "accuracy": 0.7575757575757576,
+      "precision": null,
+      "recall": 0,
+      "f1": 0
+    },
+    "brier": 0.13195199593939397,
+    "latencyMs": {
+      "mean": 417.3355897307693,
+      "p50": 429.0211249999993,
+      "p90": 620.5253749999993
+    },
+    "costUsd": 0.0018775799999999996,
+    "costPer1kReplies": 0.011379272727272726,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:27:52.769Z"
+  },
+  "liquid-d1.1": {
+    "name": "liquid-d1.1",
+    "provider": {
+      "kind": "decision",
+      "model": "liquid/d1.1"
+    },
+    "servedModel": "liquid/d1.1-20261027",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.9413,
+    "heldoutAuc": 0.938508064516129,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 9,
+      "fp": 5,
+      "fn": 7,
+      "tn": 57,
+      "accuracy": 0.8461538461538461,
+      "precision": 0.6428571428571429,
+      "recall": 0.5625,
+      "f1": 0.6000000000000001
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 36,
+      "fp": 24,
+      "fn": 4,
+      "tn": 101,
+      "accuracy": 0.8303030303030303,
+      "precision": 0.6,
+      "recall": 0.9,
+      "f1": 0.7200000000000001
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 28,
+      "fp": 6,
+      "fn": 12,
+      "tn": 119,
+      "accuracy": 0.8909090909090909,
+      "precision": 0.8235294117647058,
+      "recall": 0.7,
+      "f1": 0.7567567567567567
+    },
+    "brier": 0.12181137559609825,
+    "latencyMs": {
+      "mean": 665.3332355769228,
+      "p50": 614.2229999999981,
+      "p90": 1186.015792000002
+    },
+    "costUsd": 0.00119974,
+    "costPer1kReplies": 0.007271151515151515,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:27:57.424Z"
+  },
+  "pplx-decider-v1.3": {
+    "name": "pplx-decider-v1.3",
+    "provider": {
+      "kind": "decision",
+      "model": "perplexity/pplx-decider-v1.3:free"
+    },
+    "servedModel": "perplexity/pplx-decider-v1.3-20261112",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.9736,
+    "heldoutAuc": 0.96875,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 7,
+      "fp": 0,
+      "fn": 9,
+      "tn": 62,
+      "accuracy": 0.8846153846153846,
+      "precision": 1,
+      "recall": 0.4375,
+      "f1": 0.6086956521739131
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 35,
+      "fp": 12,
+      "fn": 5,
+      "tn": 113,
+      "accuracy": 0.896969696969697,
+      "precision": 0.7446808510638298,
+      "recall": 0.875,
+      "f1": 0.8045977011494252
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 21,
+      "fp": 0,
+      "fn": 19,
+      "tn": 125,
+      "accuracy": 0.8848484848484849,
+      "precision": 1,
+      "recall": 0.525,
+      "f1": 0.6885245901639345
+    },
+    "brier": 0.06500572520549867,
+    "latencyMs": {
+      "mean": 425.82483338461554,
+      "p50": 405.598833,
+      "p90": 589.3188340000002
+    },
+    "costUsd": 0,
+    "costPer1kReplies": 0,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:31:40.931Z"
+  },
+  "pplx-decider-v1.2": {
+    "name": "pplx-decider-v1.2",
+    "provider": {
+      "kind": "decision",
+      "model": "perplexity/pplx-decider-v1.2"
+    },
+    "servedModel": "perplexity/pplx-decider-v1.2-20261016",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.961,
+    "heldoutAuc": 0.9647177419354839,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 5,
+      "fp": 0,
+      "fn": 11,
+      "tn": 62,
+      "accuracy": 0.8589743589743589,
+      "precision": 1,
+      "recall": 0.3125,
+      "f1": 0.47619047619047616
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 36,
+      "fp": 8,
+      "fn": 4,
+      "tn": 117,
+      "accuracy": 0.9272727272727272,
+      "precision": 0.8181818181818182,
+      "recall": 0.9,
+      "f1": 0.8571428571428572
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 14,
+      "fp": 0,
+      "fn": 26,
+      "tn": 125,
+      "accuracy": 0.8424242424242424,
+      "precision": 1,
+      "recall": 0.35,
+      "f1": 0.5185185185185185
+    },
+    "brier": 0.06687100563960831,
+    "latencyMs": {
+      "mean": 484.6742194615385,
+      "p50": 419.78429099999994,
+      "p90": 866.5341660000013
+    },
+    "costUsd": 0.0011525,
+    "costPer1kReplies": 0.006984848484848485,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:28:05.233Z"
+  },
+  "microsoft-decision-1": {
+    "name": "microsoft-decision-1",
+    "provider": {
+      "kind": "decision",
+      "model": "microsoft/microsoft-decision-1"
+    },
+    "servedModel": "microsoft/microsoft-decision-1-20261009",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.9188,
+    "heldoutAuc": 0.9143145161290323,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 9,
+      "fp": 3,
+      "fn": 7,
+      "tn": 59,
+      "accuracy": 0.8717948717948718,
+      "precision": 0.75,
+      "recall": 0.5625,
+      "f1": 0.6428571428571429
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 29,
+      "fp": 12,
+      "fn": 11,
+      "tn": 113,
+      "accuracy": 0.8606060606060606,
+      "precision": 0.7073170731707317,
+      "recall": 0.725,
+      "f1": 0.7160493827160495
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 23,
+      "fp": 3,
+      "fn": 17,
+      "tn": 122,
+      "accuracy": 0.8787878787878788,
+      "precision": 0.8846153846153846,
+      "recall": 0.575,
+      "f1": 0.696969696969697
+    },
+    "brier": 0.09972390204893011,
+    "latencyMs": {
+      "mean": 493.3149216153846,
+      "p50": 521.1600839999992,
+      "p90": 584.2567080000008
+    },
+    "costUsd": 0.0023986620000000006,
+    "costPer1kReplies": 0.014537345454545457,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:28:08.514Z"
+  },
+  "gpt-5.4-nano": {
+    "name": "gpt-5.4-nano",
+    "provider": {
+      "kind": "openai",
+      "model": "gpt-5.4-nano",
+      "reasoning": "none"
+    },
+    "servedModel": "gpt-5.4-nano-2026-03-17",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.7774,
+    "heldoutAuc": 0.7626008064516129,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 0,
+      "fp": 1,
+      "fn": 16,
+      "tn": 61,
+      "accuracy": 0.782051282051282,
+      "precision": 0,
+      "recall": 0,
+      "f1": 0
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 27,
+      "fp": 24,
+      "fn": 13,
+      "tn": 101,
+      "accuracy": 0.7757575757575758,
+      "precision": 0.5294117647058824,
+      "recall": 0.675,
+      "f1": 0.5934065934065933
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 2,
+      "fp": 3,
+      "fn": 38,
+      "tn": 122,
+      "accuracy": 0.7515151515151515,
+      "precision": 0.4,
+      "recall": 0.05,
+      "f1": 0.0888888888888889
+    },
+    "brier": 0.16294727272727264,
+    "latencyMs": {
+      "mean": 1157.2388173461536,
+      "p50": 1221.594041999997,
+      "p90": 1476.3752920000043
+    },
+    "costUsd": 0.004781349999999999,
+    "costPer1kReplies": 0.028977878787878785,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:28:16.220Z"
+  },
+  "gpt-5.4-mini": {
+    "name": "gpt-5.4-mini",
+    "provider": {
+      "kind": "openai",
+      "model": "gpt-5.4-mini",
+      "reasoning": "none"
+    },
+    "servedModel": "gpt-5.4-mini-2026-03-17",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.8648,
+    "heldoutAuc": 0.8402217741935484,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 5,
+      "fp": 6,
+      "fn": 11,
+      "tn": 56,
+      "accuracy": 0.782051282051282,
+      "precision": 0.45454545454545453,
+      "recall": 0.3125,
+      "f1": 0.3703703703703703
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 30,
+      "fp": 16,
+      "fn": 10,
+      "tn": 109,
+      "accuracy": 0.8424242424242424,
+      "precision": 0.6521739130434783,
+      "recall": 0.75,
+      "f1": 0.6976744186046512
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 19,
+      "fp": 7,
+      "fn": 21,
+      "tn": 118,
+      "accuracy": 0.8303030303030303,
+      "precision": 0.7307692307692307,
+      "recall": 0.475,
+      "f1": 0.5757575757575758
+    },
+    "brier": 0.12866666666666668,
+    "latencyMs": {
+      "mean": 916.4418301923081,
+      "p50": 951.9012499999953,
+      "p90": 1121.955249999999
+    },
+    "costUsd": 0.01780275,
+    "costPer1kReplies": 0.10789545454545453,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:28:22.454Z"
+  },
+  "gemini-3.5-flash-lite": {
+    "name": "gemini-3.5-flash-lite",
+    "provider": {
+      "kind": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "thinking": {
+        "thinkingLevel": "minimal"
+      }
+    },
+    "servedModel": "gemini-3.5-flash-lite",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.8989,
+    "heldoutAuc": 0.8528225806451613,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 6,
+      "fp": 3,
+      "fn": 10,
+      "tn": 59,
+      "accuracy": 0.8333333333333334,
+      "precision": 0.6666666666666666,
+      "recall": 0.375,
+      "f1": 0.4800000000000001
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 29,
+      "fp": 10,
+      "fn": 11,
+      "tn": 115,
+      "accuracy": 0.8727272727272727,
+      "precision": 0.7435897435897436,
+      "recall": 0.725,
+      "f1": 0.7341772151898733
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 18,
+      "fp": 4,
+      "fn": 22,
+      "tn": 121,
+      "accuracy": 0.8424242424242424,
+      "precision": 0.8181818181818182,
+      "recall": 0.45,
+      "f1": 0.5806451612903226
+    },
+    "brier": 0.10426424242424248,
+    "latencyMs": {
+      "mean": 826.149503230769,
+      "p50": 797.0146250000034,
+      "p90": 1062.3775840000017
+    },
+    "costUsd": 0.0080405,
+    "costPer1kReplies": 0.048730303030303034,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:28:28.074Z"
+  },
+  "gemini-3.8-flash": {
+    "name": "gemini-3.8-flash",
+    "provider": {
+      "kind": "gemini",
+      "model": "gemini-3.8-flash",
+      "thinking": {
+        "thinkingLevel": "low"
+      }
+    },
+    "servedModel": "gemini-3.8-flash",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.9512,
+    "heldoutAuc": 0.9758064516129032,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 5,
+      "fp": 0,
+      "fn": 11,
+      "tn": 62,
+      "accuracy": 0.8589743589743589,
+      "precision": 1,
+      "recall": 0.3125,
+      "f1": 0.47619047619047616
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 31,
+      "fp": 4,
+      "fn": 9,
+      "tn": 121,
+      "accuracy": 0.9212121212121213,
+      "precision": 0.8857142857142857,
+      "recall": 0.775,
+      "f1": 0.8266666666666667
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 12,
+      "fp": 0,
+      "fn": 28,
+      "tn": 125,
+      "accuracy": 0.8303030303030303,
+      "precision": 1,
+      "recall": 0.3,
+      "f1": 0.4615384615384615
+    },
+    "brier": 0.06429151515151513,
+    "latencyMs": {
+      "mean": 1973.5964054230762,
+      "p50": 1834.1783330000035,
+      "p90": 2337.587542000001
+    },
+    "costUsd": 0.015975,
+    "costPer1kReplies": 0.09681818181818182,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:28:41.940Z"
+  }
+}

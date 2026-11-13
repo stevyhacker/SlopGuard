@@ -1,0 +1,13 @@
+# Secrets: never commit API keys
+.env
+.env.*
+!.env.example
+*.pem
+
+node_modules/
+.DS_Store
+dist/
+*.zip
+bench/raw/
+node_modules/
+test/out/

@@ -1,0 +1,1218 @@
+{
+  "summary": {
+    "name": "gemini-3.8-flash",
+    "provider": {
+      "kind": "gemini",
+      "model": "gemini-3.8-flash",
+      "thinking": {
+        "thinkingLevel": "low"
+      }
+    },
+    "servedModel": "gemini-3.8-flash",
+    "n": 165,
+    "missing": 0,
+    "errors": 0,
+    "auc": 0.9512,
+    "heldoutAuc": 0.9758064516129032,
+    "heldoutAt90": {
+      "t": 0.9,
+      "tp": 5,
+      "fp": 0,
+      "fn": 11,
+      "tn": 62,
+      "accuracy": 0.8589743589743589,
+      "precision": 1,
+      "recall": 0.3125,
+      "f1": 0.47619047619047616
+    },
+    "at50": {
+      "t": 0.5,
+      "tp": 31,
+      "fp": 4,
+      "fn": 9,
+      "tn": 121,
+      "accuracy": 0.9212121212121213,
+      "precision": 0.8857142857142857,
+      "recall": 0.775,
+      "f1": 0.8266666666666667
+    },
+    "at90": {
+      "t": 0.9,
+      "tp": 12,
+      "fp": 0,
+      "fn": 28,
+      "tn": 125,
+      "accuracy": 0.8303030303030303,
+      "precision": 1,
+      "recall": 0.3,
+      "f1": 0.4615384615384615
+    },
+    "brier": 0.06429151515151513,
+    "latencyMs": {
+      "mean": 1973.5964054230762,
+      "p50": 1834.1783330000035,
+      "p90": 2337.587542000001
+    },
+    "costUsd": 0.015975,
+    "costPer1kReplies": 0.09681818181818182,
+    "firstError": null,
+    "ranAt": "2026-11-13T14:28:41.940Z"
+  },
+  "rows": [
+    {
+      "thread": "t0",
+      "idx": 0,
+      "label": 0,
+      "p": 0.1,
+      "text": "You don’t become a successful business in China without pledging loyalty to the CCP.  That being said you always have de"
+    },
+    {
+      "thread": "t0",
+      "idx": 1,
+      "label": 0,
+      "p": 0.02,
+      "text": "You conveniently forgot about Marco Rubio"
+    },
+    {
+      "thread": "t0",
+      "idx": 2,
+      "label": 0,
+      "p": 0.03,
+      "text": "I'd actually argue that Sacks is not a very smart guy. Lucky, yes. Shameless Trump suck up, absolutely. But not sold on "
+    },
+    {
+      "thread": "t0",
+      "idx": 3,
+      "label": 0,
+      "p": 0.75,
+      "text": "Good points. Readers should see this other key post of yours. \nhttps://t.co/e2ITMbSeKg"
+    },
+    {
+      "thread": "t0",
+      "idx": 4,
+      "label": 0,
+      "p": 0.15,
+      "text": "Racism is still rampant for Chinese in this country. Very sad."
+    },
+    {
+      "thread": "t0",
+      "idx": 5,
+      "label": 0,
+      "p": 0.05,
+      "text": "Aka you helped spread the lie of her being a spy to enhance the value of his AI competitors, which you have heavy invest"
+    },
+    {
+      "thread": "t0",
+      "idx": 6,
+      "label": 0,
+      "p": 0.05,
+      "text": "Why don't they know?"
+    },
+    {
+      "thread": "t0",
+      "idx": 7,
+      "label": 0,
+      "p": 0.03,
+      "text": "Jensen and large chunks of Silicon Valley and the Tech Bro scene are working for the Chinese Communists.  \n\nYeah, no shi"
+    },
+    {
+      "thread": "t0",
+      "idx": 8,
+      "label": 0,
+      "p": 0.12,
+      "text": "In my mind, the question is not \"is she a spy\", but merely \"Did he tell her anything or gave any chance she got informat"
+    },
+    {
+      "thread": "t0",
+      "idx": 9,
+      "label": 0,
+      "p": 0.05,
+      "text": "Jensen was still basically running an illegal smuggling ring to china, lying about it, while advising the white house. a"
+    },
+    {
+      "thread": "t1",
+      "idx": 0,
+      "label": 0,
+      "p": 0.01,
+      "text": "If Bill Clinton can stay President of the USA after banging his intern in the White House and lying about it under oath,"
+    },
+    {
+      "thread": "t1",
+      "idx": 1,
+      "label": 0,
+      "p": 0.05,
+      "text": "That's what makes him being gone so awesome."
+    },
+    {
+      "thread": "t1",
+      "idx": 2,
+      "label": 0,
+      "p": 0.15,
+      "text": "If you wanted to make an argument against democracy, the comments arguing against the impact of steve jobs in this threa"
+    },
+    {
+      "thread": "t1",
+      "idx": 3,
+      "label": 0,
+      "p": 0.1,
+      "text": "his comeback will go down in the history books"
+    },
+    {
+      "thread": "t1",
+      "idx": 4,
+      "label": 1,
+      "p": 0.4,
+      "text": "I agree with your point of view."
+    },
+    {
+      "thread": "t1",
+      "idx": 5,
+      "label": 0,
+      "p": 0.1,
+      "text": "Nobody is irreplaceable. Apple is still the largest company in the world even without Steve Jobs."
+    },
+    {
+      "thread": "t1",
+      "idx": 6,
+      "label": 1,
+      "p": 0.92,
+      "text": "Founder-led companies make the big bets fast. Committees don't. That's the real loss for Nvidia."
+    },
+    {
+      "thread": "t1",
+      "idx": 7,
+      "label": 0,
+      "p": 0.01,
+      "text": "Retarded. Tim Cook did more than Jobs ever did bird brain"
+    },
+    {
+      "thread": "t1",
+      "idx": 8,
+      "label": 0,
+      "p": 0.02,
+      "text": "You sound like an NPC"
+    },
+    {
+      "thread": "t1",
+      "idx": 9,
+      "label": 0,
+      "p": 0.08,
+      "text": "feeling sad for him!"
+    },
+    {
+      "thread": "t2",
+      "idx": 0,
+      "label": 0,
+      "p": 0.01,
+      "text": "You Scam Mother Fucker 🤜"
+    },
+    {
+      "thread": "t2",
+      "idx": 1,
+      "label": 0,
+      "p": 0.01,
+      "text": "Get liquidated Asia man."
+    },
+    {
+      "thread": "t2",
+      "idx": 2,
+      "label": 0,
+      "p": 0.03,
+      "text": "Where are they getting all this invisible money man"
+    },
+    {
+      "thread": "t2",
+      "idx": 3,
+      "label": 0,
+      "p": 0.02,
+      "text": "The cancer of crypto"
+    },
+    {
+      "thread": "t2",
+      "idx": 4,
+      "label": 0,
+      "p": 0.02,
+      "text": "Inside trader. Its so obvious."
+    },
+    {
+      "thread": "t2",
+      "idx": 5,
+      "label": 0,
+      "p": 0.01,
+      "text": "F u scamer"
+    },
+    {
+      "thread": "t2",
+      "idx": 6,
+      "label": 1,
+      "p": 0.95,
+      "text": "This is exactly how trust is rebuilt after an incident — fast coverage, then verifiable proof. The zero-knowledge PoR st"
+    },
+    {
+      "thread": "t2",
+      "idx": 7,
+      "label": 1,
+      "p": 0.35,
+      "text": "Tether is pushing the RGB protocol, where asset data is verified on the client side and only a single commitment-anchore"
+    },
+    {
+      "thread": "t2",
+      "idx": 8,
+      "label": 1,
+      "p": 0.94,
+      "text": "That 1:1 backing is exactly why users stay loyal through incidents like this. Transparency after a security event builds"
+    },
+    {
+      "thread": "t2",
+      "idx": 9,
+      "label": 0,
+      "p": 0.05,
+      "text": "Stay SAFU"
+    },
+    {
+      "thread": "t2",
+      "idx": 10,
+      "label": 0,
+      "p": 0.03,
+      "text": "So the market manipulation is over"
+    },
+    {
+      "thread": "t2",
+      "idx": 11,
+      "label": 0,
+      "p": 0.01,
+      "text": "when Jail cartel boss?"
+    },
+    {
+      "thread": "t3",
+      "idx": 0,
+      "label": 0,
+      "p": 0.02,
+      "text": "Amen!"
+    },
+    {
+      "thread": "t3",
+      "idx": 1,
+      "label": 1,
+      "p": 0.05,
+      "text": "The real leverage isn't just open weights but the tooling that makes them runnable anywhere - llama.cpp's AVX2/FMA fallb"
+    },
+    {
+      "thread": "t3",
+      "idx": 2,
+      "label": 0,
+      "p": 0.04,
+      "text": "Dream come true!"
+    },
+    {
+      "thread": "t3",
+      "idx": 3,
+      "label": 0,
+      "p": 0.01,
+      "text": "Omarchy Open weight models?  27B?  35BA3B?"
+    },
+    {
+      "thread": "t3",
+      "idx": 4,
+      "label": 0,
+      "p": 0.02,
+      "text": "Now is not the time to have a local Ai, it's too expensive.\nDeepseek 4evah"
+    },
+    {
+      "thread": "t3",
+      "idx": 5,
+      "label": 1,
+      "p": 0.12,
+      "text": "Open weights are there. What's still missing is the boring tooling: evals, caching, and observability built for a model "
+    },
+    {
+      "thread": "t3",
+      "idx": 6,
+      "label": 1,
+      "p": 0.88,
+      "text": "The global collaboration is key. What happens when agents can access compute and information from anywhere instead of re"
+    },
+    {
+      "thread": "t3",
+      "idx": 7,
+      "label": 0,
+      "p": 0.03,
+      "text": "Def the future."
+    },
+    {
+      "thread": "t3",
+      "idx": 8,
+      "label": 1,
+      "p": 0.18,
+      "text": "sounds like we're building toward the same future 👀"
+    },
+    {
+      "thread": "t3",
+      "idx": 9,
+      "label": 0,
+      "p": 0.05,
+      "text": "Edge0 put out a 145B open-weight model this week and benchmarked it capped at 16GB of VRAM and 20GB of RAM. 36.8 tok/s c"
+    },
+    {
+      "thread": "t4",
+      "idx": 0,
+      "label": 0,
+      "p": 0.02,
+      "text": "government is crookery"
+    },
+    {
+      "thread": "t4",
+      "idx": 1,
+      "label": 0,
+      "p": 0.05,
+      "text": "That makes no sense. How could a ban on open models even work?"
+    },
+    {
+      "thread": "t4",
+      "idx": 2,
+      "label": 1,
+      "p": 0.04,
+      "text": "downloading weights now feels less paranoid than it did last week"
+    },
+    {
+      "thread": "t4",
+      "idx": 3,
+      "label": 0,
+      "p": 0.08,
+      "text": "Never a bad idea"
+    },
+    {
+      "thread": "t4",
+      "idx": 4,
+      "label": 0,
+      "p": 0.1,
+      "text": "These are dark times for Nvidia"
+    },
+    {
+      "thread": "t4",
+      "idx": 5,
+      "label": 0,
+      "p": 0.04,
+      "text": "I think the Chinese models go alright?"
+    },
+    {
+      "thread": "t4",
+      "idx": 6,
+      "label": 0,
+      "p": 0.25,
+      "text": "Personally I like to take a positive view: Lets wait and see what @JensenHuang does next. Maybe something bigger and bet"
+    },
+    {
+      "thread": "t4",
+      "idx": 7,
+      "label": 1,
+      "p": 0.96,
+      "text": "Solid advice. Diversifying compute infrastructure is key when regulatory winds shift. Having open-weight backups is a sm"
+    },
+    {
+      "thread": "t4",
+      "idx": 8,
+      "label": 0,
+      "p": 0.05,
+      "text": "This has nothing to do with NVIDIA or Jensen. It was about the Biden admin times."
+    },
+    {
+      "thread": "t4",
+      "idx": 9,
+      "label": 0,
+      "p": 0.02,
+      "text": "What was that app/method/software that allows you to use bigger models locally than your ram can hold, by calling on the"
+    },
+    {
+      "thread": "t4",
+      "idx": 10,
+      "label": 0,
+      "p": 0.03,
+      "text": "I forgot they own hugging face now 🙃"
+    },
+    {
+      "thread": "t5",
+      "idx": 0,
+      "label": 0,
+      "p": 0.03,
+      "text": "“Having zero clue what the internet is mad about today” is the one I’d actually put on my goals list haha"
+    },
+    {
+      "thread": "t5",
+      "idx": 1,
+      "label": 0,
+      "p": 0.15,
+      "text": "Top of the list is “Having a full understanding of Bitcoin and why it is important for humanity”"
+    },
+    {
+      "thread": "t5",
+      "idx": 2,
+      "label": 0,
+      "p": 0.02,
+      "text": "Great list \n\nExcept the smell of Le labo makes me puke a little"
+    },
+    {
+      "thread": "t5",
+      "idx": 3,
+      "label": 0,
+      "p": 0.02,
+      "text": "btw i know my VO2  max haha"
+    },
+    {
+      "thread": "t5",
+      "idx": 4,
+      "label": 0,
+      "p": 0.04,
+      "text": "Wow I feel seen"
+    },
+    {
+      "thread": "t5",
+      "idx": 5,
+      "label": 0,
+      "p": 0.1,
+      "text": "bro you agent is cooking 😅 such a funny epic list"
+    },
+    {
+      "thread": "t5",
+      "idx": 6,
+      "label": 0,
+      "p": 0.05,
+      "text": "Having a @DEVIALET bluetooth speaker"
+    },
+    {
+      "thread": "t5",
+      "idx": 7,
+      "label": 0,
+      "p": 0.03,
+      "text": "Perplexed cause I have 2/3 of the list but my net worth is $50K. Long way till the private cook and 2000s Porsche 911 th"
+    },
+    {
+      "thread": "t5",
+      "idx": 8,
+      "label": 0,
+      "p": 0.04,
+      "text": "one carbon fiber electronic gearset road bike and one 1970s vintage italian road bike"
+    },
+    {
+      "thread": "t5",
+      "idx": 9,
+      "label": 0,
+      "p": 0.02,
+      "text": "1) Having 8 figures liquid \n2) Being a LinkedIn troll \n3) Being in good shape and good at golf, tennis and skiing. \n4) H"
+    },
+    {
+      "thread": "t5",
+      "idx": 10,
+      "label": 1,
+      "p": 0.88,
+      "text": "A home full of good books, meaningful conversations, and people you love beats most luxury purchases."
+    },
+    {
+      "thread": "t6",
+      "idx": 0,
+      "label": 1,
+      "p": 0.85,
+      "text": "Feeling overwhelmed is just your brain's response to discomfort, and that feeling isn't permanent. The moment you keep g"
+    },
+    {
+      "thread": "t6",
+      "idx": 1,
+      "label": 0,
+      "p": 0.2,
+      "text": "When I feel pain, I know I'm making progress"
+    },
+    {
+      "thread": "t6",
+      "idx": 2,
+      "label": 0,
+      "p": 0.05,
+      "text": "Everyday? https://t.co/dVTM0mnfmF"
+    },
+    {
+      "thread": "t6",
+      "idx": 3,
+      "label": 0,
+      "p": 0.1,
+      "text": "yeah I get it. i seriously have no clue atm how im going to reach 10k on X and launch atleast 3 micro saas by the end of"
+    },
+    {
+      "thread": "t6",
+      "idx": 4,
+      "label": 1,
+      "p": 0.6,
+      "text": "Needed this today. I used to read feeling lost as a sign I was doing something wrong, and it took me way too long to see"
+    },
+    {
+      "thread": "t6",
+      "idx": 5,
+      "label": 0,
+      "p": 0.15,
+      "text": "I often get overwhelmed and often feel like I'm failing, but after reading this, I shouldn't be feeling overwhelmed."
+    },
+    {
+      "thread": "t6",
+      "idx": 6,
+      "label": 0,
+      "p": 0.2,
+      "text": "I don't think people mind feeling overwhelmed. it's how much control they have in getting the overwhelm reduced. If I kn"
+    },
+    {
+      "thread": "t6",
+      "idx": 7,
+      "label": 1,
+      "p": 0.75,
+      "text": "Being overwhelmed is proof you're on the right path.\n\nEmbrace it. Don't chicken out. \n\nTook me a while to realize the di"
+    },
+    {
+      "thread": "t6",
+      "idx": 8,
+      "label": 1,
+      "p": 0.55,
+      "text": "the pain of actually learning something is temporary, the regret of staying stuck tends to compound"
+    },
+    {
+      "thread": "t6",
+      "idx": 9,
+      "label": 0,
+      "p": 0.15,
+      "text": "Overwhelmed? Nah. Why can’t you feel excited about new things instead? Overwhelmed is a negative emotion. Must suck to f"
+    },
+    {
+      "thread": "t6",
+      "idx": 10,
+      "label": 1,
+      "p": 0.85,
+      "text": "It’s a trainable skill, which is the good news. The gap is usually that it’s boring, and the real work is a small rep do"
+    },
+    {
+      "thread": "t6",
+      "idx": 11,
+      "label": 1,
+      "p": 0.95,
+      "text": "Welcome, and good place to start. One addition from what I’ve learned: size the stretch so you can recover from it. Grow"
+    },
+    {
+      "thread": "t7",
+      "idx": 0,
+      "label": 1,
+      "p": 0.88,
+      "text": "Concrete part of the x86 analogy: the same primitives target React, Vue, Svelte, Solid and Web Components, with ARIA wir"
+    },
+    {
+      "thread": "t7",
+      "idx": 1,
+      "label": 1,
+      "p": 0.92,
+      "text": "Frameworks do not disappear, they move down a layer. Libraries become primitives agents compose, so the durable work is "
+    },
+    {
+      "thread": "t7",
+      "idx": 2,
+      "label": 1,
+      "p": 0.55,
+      "text": "If agents write most UI code, do component libraries basically become docs for the model instead of for humans? Feels li"
+    },
+    {
+      "thread": "t7",
+      "idx": 3,
+      "label": 0,
+      "p": 0.08,
+      "text": "shadcn walked so agents could copy paste at the speed of light"
+    },
+    {
+      "thread": "t7",
+      "idx": 4,
+      "label": 0,
+      "p": 0.1,
+      "text": "delete the part is a scary sentence if you maintain a component library"
+    },
+    {
+      "thread": "t7",
+      "idx": 5,
+      "label": 1,
+      "p": 0.6,
+      "text": "Packaged behaviors for focus, keyboard and a11y are what agents get wrong most, so I'm sold on that part. \"Zero limitati"
+    },
+    {
+      "thread": "t7",
+      "idx": 6,
+      "label": 0,
+      "p": 0.15,
+      "text": "I love the presentation video !"
+    },
+    {
+      "thread": "t7",
+      "idx": 7,
+      "label": 1,
+      "p": 0.94,
+      "text": "Pre-baked component libraries were built for human developers copy-pasting JSX. Agents do not need polished UI kits: the"
+    },
+    {
+      "thread": "t7",
+      "idx": 8,
+      "label": 1,
+      "p": 0.4,
+      "text": "My guess is that conventions matter more, not less. Agents do best where there's one obvious way to do things. A framewo"
+    },
+    {
+      "thread": "t7",
+      "idx": 9,
+      "label": 0,
+      "p": 0.05,
+      "text": "how is behaviour different than components?"
+    },
+    {
+      "thread": "t7",
+      "idx": 10,
+      "label": 0,
+      "p": 0.03,
+      "text": "less code fewer bugs"
+    },
+    {
+      "thread": "t8",
+      "idx": 0,
+      "label": 0,
+      "p": 0.02,
+      "text": "Fuck that it would be far more interesting to see Jensen do something different. Let’s see if he can run it back"
+    },
+    {
+      "thread": "t8",
+      "idx": 1,
+      "label": 0,
+      "p": 0.15,
+      "text": "The signal is a Trump pardon. If no pardon then no national security issue and he comes back."
+    },
+    {
+      "thread": "t8",
+      "idx": 2,
+      "label": 0,
+      "p": 0.02,
+      "text": "How much money do you have in it?"
+    },
+    {
+      "thread": "t8",
+      "idx": 3,
+      "label": 0,
+      "p": 0.03,
+      "text": "\"Way better\" Nvidia is literally the benchmark as the best company in the world lmfao\n\nBetter than what?"
+    },
+    {
+      "thread": "t8",
+      "idx": 4,
+      "label": 0,
+      "p": 0.03,
+      "text": "David Sacks is not an accurate source"
+    },
+    {
+      "thread": "t8",
+      "idx": 5,
+      "label": 0,
+      "p": 0.04,
+      "text": "\"Former President of Taco Bell\"\n\"Former chief marketing officer for the NFL\""
+    },
+    {
+      "thread": "t8",
+      "idx": 6,
+      "label": 0,
+      "p": 0.82,
+      "text": "Nvidia without Jensen is basically Intel with better PR. Bring back the leather jacket."
+    },
+    {
+      "thread": "t8",
+      "idx": 7,
+      "label": 0,
+      "p": 0.1,
+      "text": "I think we have the set up for the biggest corporate CEO come back in history: \n1. Jensen \"resigns\"\n2. Nvidia market cap"
+    },
+    {
+      "thread": "t8",
+      "idx": 8,
+      "label": 0,
+      "p": 0.15,
+      "text": "Unfortunately the financial gymnastics and $100s B in loan guarantees and potential ‘channel’ stuffing is what may be th"
+    },
+    {
+      "thread": "t8",
+      "idx": 9,
+      "label": 1,
+      "p": 0.75,
+      "text": "3,000 likes in two hours and a prediction market already. if the board pushed Jensen out on a story that doesn't hold, $"
+    },
+    {
+      "thread": "t8",
+      "idx": 10,
+      "label": 0,
+      "p": 0.15,
+      "text": "Hi Balaji, how do you feel about this? \nhttps://t.co/LmqCFUGtzx"
+    },
+    {
+      "thread": "t9",
+      "idx": 0,
+      "label": 1,
+      "p": 0.65,
+      "text": "Building is the clearest case of this. Nobody can teach you why your deploy broke at 2am, you just have to need the answ"
+    },
+    {
+      "thread": "t9",
+      "idx": 1,
+      "label": 0,
+      "p": 0.45,
+      "text": "Curiosity is a critical meta-skill."
+    },
+    {
+      "thread": "t9",
+      "idx": 2,
+      "label": 0,
+      "p": 0.05,
+      "text": "This is so true. \n\nthe things that actually stuck for me were the ones i had to figure out myself"
+    },
+    {
+      "thread": "t9",
+      "idx": 3,
+      "label": 0,
+      "p": 0.7,
+      "text": "The age of \"being good at answering\" is over.\n\nIt's now, \"be good at asking\" which also means \"truly think about it firs"
+    },
+    {
+      "thread": "t9",
+      "idx": 4,
+      "label": 1,
+      "p": 0.6,
+      "text": "AI makes this sharper, not weaker. You can now get an answer to anything without ever teaching yourself. The people who "
+    },
+    {
+      "thread": "t9",
+      "idx": 5,
+      "label": 0,
+      "p": 0.15,
+      "text": "That seems fairly obvious, though. When we communicate, we're transmitting highly compressed representations of the idea"
+    },
+    {
+      "thread": "t9",
+      "idx": 6,
+      "label": 1,
+      "p": 0.2,
+      "text": "nothing creates resentment toward a subject faster than being made to absorb it before you are ready"
+    },
+    {
+      "thread": "t9",
+      "idx": 7,
+      "label": 0,
+      "p": 0.02,
+      "text": "I would say another PG banger but really it's a JR banger."
+    },
+    {
+      "thread": "t9",
+      "idx": 8,
+      "label": 1,
+      "p": 0.25,
+      "text": "Same with AI today. Someone I respect told me to try doing everything with AI first. The lessons that stuck came from my"
+    },
+    {
+      "thread": "t9",
+      "idx": 9,
+      "label": 1,
+      "p": 0.75,
+      "text": "This is why most courses don't work. The info is free, the motivation to teach yourself isn't. Nobody can make you curio"
+    },
+    {
+      "thread": "t9",
+      "idx": 10,
+      "label": 0,
+      "p": 0.05,
+      "text": "\"There is no expedient to which a man will not resort to avoid the real labor of thinking\"\n\n- Joshua Reynolds"
+    },
+    {
+      "thread": "t10",
+      "idx": 0,
+      "label": 0,
+      "p": 0.02,
+      "text": "cool..."
+    },
+    {
+      "thread": "t10",
+      "idx": 1,
+      "label": 0,
+      "p": 0.03,
+      "text": "WERE GONNA NEED A BIGGER RED CANDLE!"
+    },
+    {
+      "thread": "t10",
+      "idx": 2,
+      "label": 0,
+      "p": 0.05,
+      "text": "I'm calling PETA"
+    },
+    {
+      "thread": "t10",
+      "idx": 3,
+      "label": 0,
+      "p": 0.04,
+      "text": "Whay are you inviting these bears LOL"
+    },
+    {
+      "thread": "t10",
+      "idx": 4,
+      "label": 0,
+      "p": 0.06,
+      "text": "Buy the dip bro"
+    },
+    {
+      "thread": "t10",
+      "idx": 5,
+      "label": 0,
+      "p": 0.04,
+      "text": "posting bear attack resolved after this mornings wick into the 200 week ma is very on brand"
+    },
+    {
+      "thread": "t10",
+      "idx": 6,
+      "label": 0,
+      "p": 0.1,
+      "text": "I don’t think the bear has ever won, to be honest"
+    },
+    {
+      "thread": "t10",
+      "idx": 7,
+      "label": 0,
+      "p": 0.02,
+      "text": "You are probably the worst investor in history. After buying 1000 BTC last week your precious coin dropped massiv"
+    },
+    {
+      "thread": "t10",
+      "idx": 8,
+      "label": 0,
+      "p": 0.08,
+      "text": "Amazing 😍 #LFG"
+    },
+    {
+      "thread": "t10",
+      "idx": 9,
+      "label": 0,
+      "p": 0.08,
+      "text": "Talking about the bull market while the bear is literally right behind him 😂"
+    },
+    {
+      "thread": "t10",
+      "idx": 10,
+      "label": 0,
+      "p": 0.02,
+      "text": "really bad\n\nReally boomer coded and pathetic"
+    },
+    {
+      "thread": "t10",
+      "idx": 11,
+      "label": 0,
+      "p": 0.15,
+      "text": "I would like to hear your objective, honest assessment of bitcoin prices right now. It seems ludicrously disconnected fr"
+    },
+    {
+      "thread": "t11",
+      "idx": 0,
+      "label": 0,
+      "p": 0.1,
+      "text": "Never thought Linear Algebra was going to be the most controversial book in my library😥"
+    },
+    {
+      "thread": "t11",
+      "idx": 1,
+      "label": 1,
+      "p": 0.75,
+      "text": "code and numbers obey truth, never shifting regulations."
+    },
+    {
+      "thread": "t11",
+      "idx": 2,
+      "label": 0,
+      "p": 0.05,
+      "text": "I’m sorry @dhh but this time you’ve gone too far. I understand you to be a bit of a free speech absolutist but allowing "
+    },
+    {
+      "thread": "t11",
+      "idx": 3,
+      "label": 0,
+      "p": 0.05,
+      "text": "i never thought i'd care so much about the second amendment"
+    },
+    {
+      "thread": "t11",
+      "idx": 4,
+      "label": 0,
+      "p": 0.05,
+      "text": "moving my TI-84 into the gun safe"
+    },
+    {
+      "thread": "t11",
+      "idx": 5,
+      "label": 0,
+      "p": 0.1,
+      "text": "Linear algebra is the bee's knees. All my favorite math and engineering classes were linear algebra (or linear algebra a"
+    },
+    {
+      "thread": "t11",
+      "idx": 6,
+      "label": 1,
+      "p": 0.85,
+      "text": "Wild that 'multiplying numbers on your own computer' is now a debate. Every small business running local AI is quietly h"
+    },
+    {
+      "thread": "t11",
+      "idx": 7,
+      "label": 0,
+      "p": 0.15,
+      "text": "Keep Math Legal.  KISS"
+    },
+    {
+      "thread": "t11",
+      "idx": 8,
+      "label": 0,
+      "p": 0.05,
+      "text": "If matrix math gets banned my 7th grader is going to be thrilled 😂"
+    },
+    {
+      "thread": "t11",
+      "idx": 9,
+      "label": 0,
+      "p": 0.1,
+      "text": "Quick do a quaternion rotation! They won't know wtf you mean or have any idea how to say it!\n\nCan we discuss that bannin"
+    },
+    {
+      "thread": "t11",
+      "idx": 10,
+      "label": 0,
+      "p": 0.15,
+      "text": "In 2026 people thought this was funny."
+    },
+    {
+      "thread": "t11",
+      "idx": 11,
+      "label": 0,
+      "p": 0.05,
+      "text": "STOP YELLING"
+    },
+    {
+      "thread": "t12",
+      "idx": 0,
+      "label": 1,
+      "p": 0.85,
+      "text": "True, but living this far north also means paying for heating that costs a kidney. Would you trade your electricity bill"
+    },
+    {
+      "thread": "t12",
+      "idx": 1,
+      "label": 0,
+      "p": 0.2,
+      "text": "I wonder how your circadian rhythm has been lately."
+    },
+    {
+      "thread": "t12",
+      "idx": 2,
+      "label": 0,
+      "p": 0.05,
+      "text": "Beauty!"
+    },
+    {
+      "thread": "t12",
+      "idx": 3,
+      "label": 0,
+      "p": 0.15,
+      "text": "I imagine this is to do with how much further north the entire UK is compared to the US (and even most of populated Cana"
+    },
+    {
+      "thread": "t12",
+      "idx": 4,
+      "label": 0,
+      "p": 0.05,
+      "text": "very UK"
+    },
+    {
+      "thread": "t12",
+      "idx": 5,
+      "label": 0,
+      "p": 0.1,
+      "text": "Do you prefer northern lights? Some part of southern europe in October are absolutely incredible: the light could be so "
+    },
+    {
+      "thread": "t12",
+      "idx": 6,
+      "label": 0,
+      "p": 0.25,
+      "text": "This is a very British way to put it. \n\nAn alternative would be 'A great thing about living this far north is the light'"
+    },
+    {
+      "thread": "t12",
+      "idx": 7,
+      "label": 0,
+      "p": 0.05,
+      "text": "Golden hour is cool, but also chip butties 🧐"
+    },
+    {
+      "thread": "t12",
+      "idx": 8,
+      "label": 0,
+      "p": 0.1,
+      "text": "One horror of living this far north is the light. Lack thereof."
+    },
+    {
+      "thread": "t12",
+      "idx": 9,
+      "label": 0,
+      "p": 0.2,
+      "text": "that’s true, but unfortunately elusive"
+    },
+    {
+      "thread": "t12",
+      "idx": 10,
+      "label": 0,
+      "p": 0.08,
+      "text": "Ah didn't realise you were in the UK. So many questions about how it's changed your perspective."
+    },
+    {
+      "thread": "t12",
+      "idx": 11,
+      "label": 0,
+      "p": 0.02,
+      "text": "One consolation of living this far north is the dark. https://t.co/h0EUzzf2ts"
+    },
+    {
+      "thread": "t13",
+      "idx": 0,
+      "label": 1,
+      "p": 0.65,
+      "text": "remainders are publishing's power law. a few books carry the whole shelf, the rest block the aisle."
+    },
+    {
+      "thread": "t13",
+      "idx": 1,
+      "label": 0,
+      "p": 0.05,
+      "text": "I like reading still but this is romanticizing much lol people talk to AI and learn in debates discussion even being on "
+    },
+    {
+      "thread": "t13",
+      "idx": 2,
+      "label": 0,
+      "p": 0.03,
+      "text": "every bookstore i go into now, the stuff i actually want is in the back corner on the bottom shelf"
+    },
+    {
+      "thread": "t13",
+      "idx": 3,
+      "label": 1,
+      "p": 0.92,
+      "text": "Remainder tables are the physical version of a feed. What someone needs to move gets placed between you and the thing yo"
+    },
+    {
+      "thread": "t13",
+      "idx": 4,
+      "label": 0,
+      "p": 0.04,
+      "text": "guarantee half of those piles are unsold celebrity memoirs"
+    },
+    {
+      "thread": "t13",
+      "idx": 5,
+      "label": 0,
+      "p": 0.75,
+      "text": "This is a fitting metaphor for the internet right now, except the remainders are AI slop and they’ve completely blocked "
+    },
+    {
+      "thread": "t13",
+      "idx": 6,
+      "label": 0,
+      "p": 0.15,
+      "text": "Counterpoint: more and more books get printed every year, at a much higher rate than new bookshops are constructed. The "
+    },
+    {
+      "thread": "t13",
+      "idx": 7,
+      "label": 1,
+      "p": 0.94,
+      "text": "Burying the used books behind piles of remainders is the physical version of SEO spam. The good stuff is always one aisl"
+    },
+    {
+      "thread": "t13",
+      "idx": 8,
+      "label": 1,
+      "p": 0.88,
+      "text": "The remainders are the real inventory. Most of what gets printed never finds a reader. The used section is just where th"
+    },
+    {
+      "thread": "t14",
+      "idx": 0,
+      "label": 0,
+      "p": 0.05,
+      "text": "Wonderful most if DHH would make an Omarchy walk-through video."
+    },
+    {
+      "thread": "t14",
+      "idx": 1,
+      "label": 0,
+      "p": 0.02,
+      "text": "Please add windows snap shortcuts, (i.e. Super + Left Arrow key,  Super + Right Arrow key, etc.)."
+    },
+    {
+      "thread": "t14",
+      "idx": 2,
+      "label": 0,
+      "p": 0.05,
+      "text": "\"theme matched icons\"... woohooo. If only Flea had them."
+    },
+    {
+      "thread": "t14",
+      "idx": 3,
+      "label": 0,
+      "p": 0.03,
+      "text": "hey u know whats missing in all these shenanigans???"
+    },
+    {
+      "thread": "t14",
+      "idx": 4,
+      "label": 0,
+      "p": 0.04,
+      "text": "Is anyone still using NixOS? I feel like I am being left behind"
+    },
+    {
+      "thread": "t14",
+      "idx": 5,
+      "label": 0,
+      "p": 0.03,
+      "text": "Why is the theme picker the only slanted component in the entire OS? It has always driven me crazy."
+    },
+    {
+      "thread": "t14",
+      "idx": 6,
+      "label": 0,
+      "p": 0.08,
+      "text": "is there a skill for AI that will allow users to make their own?"
+    },
+    {
+      "thread": "t14",
+      "idx": 7,
+      "label": 0,
+      "p": 0.04,
+      "text": "People want traditional mode and a dock? Switching between the tiles is so nice"
+    },
+    {
+      "thread": "t14",
+      "idx": 8,
+      "label": 1,
+      "p": 0.92,
+      "text": "The matched icons do more work than the dock animation. When every default app feels like it belongs to the same family,"
+    },
+    {
+      "thread": "t14",
+      "idx": 9,
+      "label": 1,
+      "p": 0.95,
+      "text": "Theme-matched icons is the kind of detail that turns a Linux setup into something people screenshot and share. Omarchy i"
+    },
+    {
+      "thread": "t14",
+      "idx": 10,
+      "label": 1,
+      "p": 0.94,
+      "text": "Theme-matched icons and a smoother dock are the kind of polish people only notice when it's missing. Traditional mode is"
+    }
+  ]
+}

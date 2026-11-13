@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SlopGuard settings</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body class="options">
+  <main>
+    <header>
+      <img src="../icons/icon48.png" alt="" width="36" height="36">
+      <div>
+        <h1>SlopGuard</h1>
+        <p class="muted">Folds away AI-bot replies under posts on X. Click any folded reply to bring it back.</p>
+      </div>
+    </header>
+
+    <section>
+      <h2>Model</h2>
+      <label for="model">Classifier</label>
+      <select id="model"></select>
+      <p class="muted small" id="modelNote"></p>
+      <label for="key">API key</label>
+      <input id="key" type="password" autocomplete="off" spellcheck="false" placeholder="Paste your key">
+      <p class="muted small" id="keyNote"></p>
+      <div class="row">
+        <button id="save" class="primary">Save</button>
+        <button id="test">Test connection</button>
+        <span id="status" class="small"></span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Filtering</h2>
+      <label for="threshold">Hide a reply when the model is at least <b id="thresholdLabel"></b> sure it is AI slop</label>
+      <input id="threshold" type="range" min="50" max="99" step="1">
+      <p class="muted small">90% is the default: it hides only clear cases. Lower it to catch more, at the risk of folding real people.</p>
+      <label>Where</label>
+      <div class="radios">
+        <label><input type="radio" name="scope" value="all"> Replies under every post I open</label>
+        <label><input type="radio" name="scope" value="mine"> Only replies under my own posts</label>
+      </div>
+      <label class="check"><input type="checkbox" id="hideGrok"> Also fold @grok answers (no API call needed)</label>
+    </section>
+
+    <section>
+      <h2>Trusted accounts</h2>
+      <p class="muted small">Accounts you marked "Not AI". Their replies are never hidden.</p>
+      <ul id="trusted" class="chips"></ul>
+    </section>
+
+    <section>
+      <h2>Privacy</h2>
+      <p class="muted small">Your key stays in this browser's local extension storage and is sent only to the provider you picked.
+        For each reply, the provider receives the post's text and author handle and the reply's text and handle. Nothing else from X is sent.
+        Verdicts are cached locally for 14 days so the same reply is never paid for twice.</p>
+      <button id="clear">Clear cached verdicts</button>
+    </section>
+  </main>
+  <script src="settings.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

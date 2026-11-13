@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SlopGuard</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body class="popup">
+  <header>
+    <img src="../icons/icon48.png" alt="" width="28" height="28">
+    <h1>SlopGuard</h1>
+    <label class="switch" title="Turn SlopGuard on or off">
+      <input type="checkbox" id="enabled"><span></span>
+    </label>
+  </header>
+  <p id="state" class="muted"></p>
+  <div class="stats">
+    <div><b id="tab">0</b><span>hidden on this page</span></div>
+    <div><b id="hidden">0</b><span>hidden today</span></div>
+    <div><b id="checked">0</b><span>checked today</span></div>
+  </div>
+  <p class="muted small">Model: <span id="model"></span> · hides at <span id="threshold"></span>+</p>
+  <button id="options" class="primary">Settings</button>
+  <script src="settings.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

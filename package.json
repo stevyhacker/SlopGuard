@@ -1,0 +1,16 @@
+{
+  "name": "slopguard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome extension that hides AI-bot slop replies on X posts",
+  "license": "MIT",
+  "scripts": {
+    "check": "for f in src/*.js; do node --check $f || exit 1; done && node -e \"JSON.parse(require('fs').readFileSync('manifest.json'))\"",
+    "test": "node --test test/unit.test.js",
+    "test:e2e": "node test/e2e.mjs",
+    "bench": "node bench/run.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.65.0"
+  }
+}

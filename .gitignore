@@ -11,3 +11,4 @@ dist/
 bench/raw/
 node_modules/
 test/out/
+docs/drafts/

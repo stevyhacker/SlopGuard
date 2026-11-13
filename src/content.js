@@ -14,6 +14,8 @@
   let pill = null;
   let notice = "";
   let lastSentCount = -1;
+  let checkedHere = 0;             // replies judged by the model on this page
+  let recapUntil = 0;
   let dead = false;
 
   const alive = () => !dead && !!chrome.runtime?.id;
@@ -99,6 +101,7 @@
   function apply(article, id, animate) {
     const v = verdicts.get(id);
     article.dataset.sgId = id;
+    if (v) { article.dataset.sgState = v.state; if (v.state !== "pending") article.dataset.sgP = v.p.toFixed(2); }
     if (!v || v.state === "clean" || v.state === "pending") {
       if (article.previousElementSibling?.classList?.contains("sg-bar")) article.previousElementSibling.remove();
       if (article.classList.contains("sg-hidden")) article.classList.remove("sg-hidden");
@@ -150,18 +153,20 @@
       });
       document.body.appendChild(pill);
     }
-    const show = settings?.enabled && route && (n || pending || notice);
+    const recap = Date.now() < recapUntil;   // brief "checked N" note so a clean thread doesn't look broken
+    const show = settings?.enabled && route && (n || pending || notice || recap);
     pill.classList.toggle("sg-pill-on", !!show);
     if (!show) return;
     const markup = `<span class="sg-shield" aria-hidden="true"></span><b>SlopGuard</b>` +
       (notice ? `<span>${notice}</span><a data-act="options">Settings</a>` :
+        !n && !pending ? `<span>checked ${checkedHere} ${checkedHere === 1 ? "reply" : "replies"} · none hidden</span>` :
         `<span>${n} hidden${pending ? ` · checking ${pending}` : ""}</span>${n ? '<a data-act="showall">Show all</a>' : ""}`);
     if (pill.innerHTML !== markup) pill.innerHTML = markup;
   }
 
   // ---------- scanning ----------
   function resetRoute(id) {
-    route = id; focal = null; ancestors = new Set(); queue = new Map(); notice = "";
+    route = id; focal = null; ancestors = new Set(); queue = new Map(); notice = ""; checkedHere = 0; recapUntil = 0;
     for (const [k, v] of verdicts) if (v.state === "pending") verdicts.delete(k);
     report();
   }
@@ -230,6 +235,10 @@
       if (v.state === "hidden") added++;
       document.querySelectorAll(`article[data-sg-id="${r.id}"]`).forEach((a) => apply(a, r.id, true));
     }
+    const judged = batch.filter((r) => verdicts.get(r.id) && verdicts.get(r.id).state !== "pending").length;
+    checkedHere += judged;
+    console.info(`[SlopGuard] ${res?.model || "?"}: checked ${judged}/${batch.length} replies, hid ${added}` + (res?.error ? ` (error: ${res.error})` : ""));
+    if (judged && !added) { recapUntil = Date.now() + 4000; setTimeout(() => report(), 4100); }
     report(added);
     scan();
   }
